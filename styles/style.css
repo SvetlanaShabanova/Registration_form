@@ -1,0 +1,84 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #8da1ac;
+    font-family: Montserrat, sans-serif, Tahoma, Geneva, Verdana;
+}
+.box{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #e6eaed;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 4px 4px 4px #4f4f4f, inset -3px -2px 7px #4f4f4f;
+
+}
+.box h1{
+    color: #395564;
+    text-transform: uppercase;
+    /*font-weight: 500;*/
+}
+
+.box input[type = "text"], .box input[type = "password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #8da1ac;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: #395564;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box input[type = "text"]:focus, .box input[type = "password"]:focus{
+    width: 280px;
+    border-color: #395564;
+}
+.box input[type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #395564;
+    padding: 14px 40px;
+    outline: none;
+    color: #395564;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.box input[type = "submit"]:hover {
+    background: #8da1ac;
+}
+
+
+
+/*Errors*/
+
+
+.error {
+    color: #8da1ac;
+    display: none;
+}
+
+.invalid {
+    border: #8da1ac 1px solid;
+}
+
+.valid {
+    border: #8da1ac 1px solid;
+}
